@@ -59,6 +59,11 @@ public class CustomerService {
     
     
     
+    
+    //You only need to pass the input parameter as id which refer to id column of personal_details table, 
+    //               and it will be referenced in both the address details and KYC details tables (personal_details_id) via a foreign key.
+    
+    
     //for UPDATE
     @Transactional
     public void updateDetails(Integer id, CustomerRequestInfo requestDTO) {
